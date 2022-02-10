@@ -16,17 +16,16 @@ export default class Brick extends Vue {
   public yLocation: number = 0;
   @Prop()
   public brickId: string = '';
-  get xloc(){
+  get xloc() {
     return this.xLocation;
   }
-  get yloc(){
+  get yloc() {
     return this.yLocation;
   }
   public mounted() {
-    debugger;
     // tslint:disable-next-line
     this.$store.commit('setBrickId', this.brickId);
-    let brick = this.$store.getters.getLocations;
+    const brick = this.$store.getters.getLocations;
   }
 }
 </script>

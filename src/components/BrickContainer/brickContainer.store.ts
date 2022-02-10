@@ -1,7 +1,7 @@
 
 
-export interface BrickContainerState{
-    brickConfigs: any[],
+export interface BrickContainerState {
+    brickConfigs: any[];
 }
 
 export default {
@@ -25,11 +25,11 @@ export default {
         brickId: 'bl3',
         xLocation: 100,
         yLocation: 50,
-      }], 
+      }],
   },
   getters: {
     getBrickConfig(state: any) {
         return state.brickConfigs;
     },
   },
-}
+};

@@ -25,10 +25,8 @@ export default class BrickContainer extends Vue {
   public cssPrefix = cssPrefix;
   public brickConfigs = [];
   public mounted() {
-    this.brickConfigs = this.$store.getters['getBrickConfig'];
-  }
-  public createBricks(){
-     
+    const val: string = 'getBrickConfig';
+    this.brickConfigs = this.$store.getters[val];
   }
 }
 </script>
